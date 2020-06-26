@@ -10,7 +10,16 @@
   </div>
   <script>
 function reqListener () {
-  console.log(this.responseText);
+  var sor = this.responseText;
+  sor = JSON.parse(sor);
+  var start = 0;
+  var stop = sor.length;
+  while (start < stop){
+    var array += array;
+    var array = '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="width:60px;height:60px;"></div><div class="name"></div><div class="version"></div></div>';
+    start +=1;
+  }
+  alert(array);
 }
 
 var oReq = new XMLHttpRequest();
