@@ -32,7 +32,7 @@ function reqListener () {
   var stop = sor.length;
   var array = '';
   while (start < stop){
-    var array = array + '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="width:60px;height:60px;"></div><div class="other"><div class="name">'+sor[start].name+'</div><div class="version">'+sor[start].ver+'</div><div class="download"><a href="'+sor[start].apk+'">Download APK</a></div></div></div>';
+    var array = array + '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="border-radius:5px;width:60px;height:60px;"></div><div class="other"><div class="name">'+sor[start].name+'</div><div class="version">'+sor[start].ver+'</div><div class="download"><a href="'+sor[start].apk+'">Download APK</a></div></div></div>';
     start +=1;
   }
   document.getElementById('store').innerHTML=array;
