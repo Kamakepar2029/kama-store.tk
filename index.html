@@ -14,8 +14,9 @@ function reqListener () {
   sor = JSON.parse(sor);
   var start = 0;
   var stop = sor.length;
+  var array = '';
   while (start < stop){
-    var array = array + '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="width:60px;height:60px;"></div><div class="name"></div><div class="version"></div></div>';
+    var array = array + '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="width:60px;height:60px;"></div><div class="name">'+sor[start].name+'</div><div class="version">'+sor[start].ver+'</div><div class="download"><a href="'+sor[start].apk+'">Download APK</a></div></div>';
     start +=1;
   }
   alert(array);
