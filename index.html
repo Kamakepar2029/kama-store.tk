@@ -15,8 +15,7 @@ function reqListener () {
   var start = 0;
   var stop = sor.length;
   while (start < stop){
-    var array += array;
-    var array = '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="width:60px;height:60px;"></div><div class="name"></div><div class="version"></div></div>';
+    var array = array + '<div class="block"><div class="img"><img src="'+sor[start].img+'" style="width:60px;height:60px;"></div><div class="name"></div><div class="version"></div></div>';
     start +=1;
   }
   alert(array);
