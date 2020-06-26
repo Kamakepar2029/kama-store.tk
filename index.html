@@ -10,10 +10,11 @@
   </div>
   <script>
     var req = new XMLHttpRequest();
-    req.open('GET', 'file:///home/user/file.json', false); 
+    req.open('GET', '/app.s', false); 
     req.send(null);
     if(req.status == 0)
     var mass = req.responseText;
+    alert(mass);
   </script>
 </body>
 </html>
